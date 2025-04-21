@@ -1,76 +1,74 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
   <head>
     <meta charset="UTF-8">
+  <!--No.1 Practice(2024/04/21)-->
     
-    <!--No.1 practice for 2025.04.20-->
-    
-      <tile>my first web page</title>
+    <title>Sign Up Form</title>
   </head>
   <body>
-    <h1>hello!</h1>
-    <p>this is my first web page</p>
 
-    <!--No.2 practice for 2025.04.20-->
-    
-    <hr>
-    <h2>this is h2</h2>
-    <h3>this is h3</h3>
-    <h4>this is h4</h4>
-    <h5>this is h5</h5>
-    <h6>this is h6</h6>
+    <h2>Sign Up</h2>
 
-    <p>this is the first paragraph</p>
-    <p>this paragraph <br> contains line breaks</p>
+    <form>
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username"><br><br>
 
-    <hr>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
 
-    <p>This is a paragraph located below the horizon</p>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
 
-    <!--No.3 practice for 2025.04.20-->
-    
-    <h2>Links</h2>
+      <button type="submit">Register</button><br>
 
-    <p>Visit <a href="https://www.google.com" target="_blank">Google</a> to search the web.</p>
-    
-    <p>Check out my
-      <a href="https://github.com/JOO-gil" target="_blank">GitHub portfolio</a>!
-    </p>
+      <button type="reset">Reset</button> <!--Not used much-->
 
-    <!--No.4 practice for 2025.04.20-->
-    
-    <h2>My favorite Image</h2>
+      
+    </form>
 
-    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML5 Logo" width="300">
+  <!--No.2 Practice(2024/04/21)-->
 
-    <!--No.5 practice for 2025.04.20-->
-    
-    <h2>My tech Stack</h2>
+    <h2>Sign Up</h2>
 
-    <ul>
-      <ul>HTML</ul>
-      <ul>CSS</ul>
-      <ul>JavaScript</ul>
-      <ul>Python</ul>
-    </ul>
+    <form>
+      
+      <label for="username">Full Name:</label>
+      <input type="text" id="username" name="username"><br><br>
 
-    <h2>Today's To-Do List</h2>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
 
-    <ol>
-      <ul>Finish HTML list practice</ul>
-      <ul>Push the code to GitHub</ul>
-      <ul>Document progress on Notion</ul>
-    </ol>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
 
-    <ul>
-      <li>Frontend
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </li>
-      <li>Backend</li>
-    </ul>
-    
+      
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      
+      <label for="birth">Date of Birth:</label>
+      <input type="date" id="birth" name="birth"><br><br>
+
+      
+      <label for="interest">Area of Interest:</label>
+      <select id="interest" name="interest">
+        <option value="ai">Artificial Intelligence</option>
+        <option value="web">Web Development</option>
+        <option value="design">UI/UX Design</option>
+      </select><br><br>
+
+      
+      <input type="checkbox" id="agree" name="agree">
+      <label for="agree">I agree to the terms and conditions</label><br><br>
+
+      
+      <button type="submit">Register</button>
+    </form>
   </body>
 </html>
