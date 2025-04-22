@@ -1,74 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-  <!--No.1 Practice(2024/04/21)-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Registration Form</title>
+
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Sign Up</h2>
+
+  <form>
+
+    <label for="username">Full Name:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="gender" value="male">
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">
+        Female
+      </label>
+    </div><br><br>
     
-    <title>Sign Up Form</title>
-  </head>
-  <body>
+    <label for="birth">Date of Birth:</label>
+    <input type="date" id="birth" name="birth"><br><br>
 
-    <h2>Sign Up</h2>
+    <label for="interest">Area of Interest:</label>
+    <select id="interest" name="interest">
+      <option value="ai">Artificial Intelligence</option>
+      <option value="web">Web Development</option>
+      <option value="design">UI/UX Design</option>
+    </select><br><br>
 
-    <form>
-      <label for="username">Name:</label>
-      <input type="text" id="username" name="username"><br><br>
+    <input type="checkbox" id="agree" name="agree">
+    <label for="agree">I agree to the terms and conditions</label><br><br>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email"><br><br>
+    <button type="submit">Register</button>
+  </form>
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password"><br><br>
-
-      <button type="submit">Register</button><br>
-
-      <button type="reset">Reset</button> <!--Not used much-->
-
-      
-    </form>
-
-  <!--No.2 Practice(2024/04/21)-->
-
-    <h2>Sign Up</h2>
-
-    <form>
-      
-      <label for="username">Full Name:</label>
-      <input type="text" id="username" name="username"><br><br>
-
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email"><br><br>
-
-      
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password"><br><br>
-
-      
-      <label>Gender:</label>
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label><br><br>
-
-      
-      <label for="birth">Date of Birth:</label>
-      <input type="date" id="birth" name="birth"><br><br>
-
-      
-      <label for="interest">Area of Interest:</label>
-      <select id="interest" name="interest">
-        <option value="ai">Artificial Intelligence</option>
-        <option value="web">Web Development</option>
-        <option value="design">UI/UX Design</option>
-      </select><br><br>
-
-      
-      <input type="checkbox" id="agree" name="agree">
-      <label for="agree">I agree to the terms and conditions</label><br><br>
-
-      
-      <button type="submit">Register</button>
-    </form>
-  </body>
+</body>
 </html>
+
